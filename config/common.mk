@@ -20,6 +20,9 @@ else
 # Enable ADB authentication
 PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure=1
 
+# Fake Decryption 
+PRODUCT_SYSTEM_PROPERTIES += ro.crypto.state=encrypted
+
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_PROPERTIES += persist.sys.strictmode.disable=true
 endif
